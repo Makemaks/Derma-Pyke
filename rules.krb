@@ -1,0 +1,28 @@
+rule_1
+    use dermatology_advice(Why_are_you_here)
+    when
+      questions.has_new_skin_issue(False)
+
+rule_2
+    use dermatology_advice(Seek_Doctor)
+    when
+      questions.is_area_itchy(True) 
+      questions.has_condition_worsened(True)
+      
+rule_3
+    use dermatology_advice(Apply_Moisturizer)
+    when
+      questions.is_area_dry(True)
+      questions.has_condition_worsened(False)
+
+rule_4
+    use dermatology_advice(Use_Over_The_Counter_Cream)
+    when
+      questions.is_area_red(True)
+      questions.has_severe_pain(False)
+
+rule_5
+    use dermatology_advice(Seek_Allergy_Test)
+    when
+      questions.is_reaction_to_product(True)
+      questions.has_swelling(True)

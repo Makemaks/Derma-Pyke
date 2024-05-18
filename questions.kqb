@@ -1,0 +1,39 @@
+is_new_skin_issue($ans)
+    Have you noticed any new skin changes or issues recently?
+    ---
+    $ans = yn
+
+is_area_itchy($ans)
+    Is the affected area itchy?
+    ---
+    $ans = yn
+
+has_condition_worsened($ans)
+    Has the condition worsened since you first noticed it?
+    ---
+    $ans = yn
+
+is_area_dry($ans)
+    Is the affected area dry?
+    ---
+    $ans = yn
+
+is_area_red($ans)
+    Is the affected area red?
+    ---
+    $ans = yn
+
+has_severe_pain($ans)
+    Are you experiencing severe pain in the affected area?
+    ---
+    $ans = yn
+
+is_reaction_to_product($ans)
+    Did the skin issue start after using a new product or medication?
+    ---
+    $ans = yn
+
+has_swelling($ans)
+    Is there any swelling in the affected area?
+    ---
+    $ans = yn
